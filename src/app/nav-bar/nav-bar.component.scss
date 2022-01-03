@@ -1,0 +1,116 @@
+@import '../../styles.scss';
+   
+   .headline{
+
+    font-family: 'Inconsolata';
+    color: black;
+    font-size: 1.75rem;
+    text-decoration: none;
+   }
+
+
+a{
+    text-decoration: none;
+}  
+
+.navbar{
+    font-family: 'Inconsolata';
+    color: black;
+    font-size: 1.75rem;
+    text-decoration: none;
+    width: 50%;
+    display: block;
+    float: none;
+    width:100%;
+}
+
+.navbar-toggler-icon{
+    background-image: url(../../assets/sass/Dropdown.svg);
+    width: 1.5rem;
+}
+
+.navbar-toggler{
+    float: right;
+    margin-right: 1.5rem;
+    padding-bottom: 0px;
+}
+
+
+.nav-item{
+    margin-left: 100px;
+    padding-top: 10px;
+    
+    .nav-link{
+    font-family: 'Inconsolata';
+    color:black;
+    font-size: 1.75rem;
+    position:relative;
+
+    }
+
+    .home{
+        &:hover{
+           color: $magenta;
+            }
+    }
+
+    .projects{
+        &:hover{
+           color: $cyan;
+        }
+    }
+
+    .about{
+        &:hover{
+           color: $yellow;
+        }
+    }
+
+    .contact{
+        &:hover{
+           color: $magenta;
+        }
+    }
+
+    .cv{
+        &:hover{
+           color: $cyan;
+        }
+    }
+}
+
+@media only screen and (min-width: 746px) {
+
+    .navbar-brand{
+    display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 990px){
+    .collapse{
+        background-color:white;
+        opacity: 0.95;
+        border: 9px solid;
+        width: 50%;
+        float: right;
+    }
+}
+
+
+@media only screen and (max-width: 746px) {
+
+    .navbar-brand{
+        margin-left: 1.5rem;
+        font-family: 'Inconsolata';
+        color: black;
+        font-size: 1.75rem;
+    }
+
+    .collapse{
+        float: left;
+        border: none;
+        width: 100%;
+    }
+    
+}

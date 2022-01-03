@@ -1,0 +1,240 @@
+@import '../../styles.scss';
+
+@keyframes squares {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+
+    20%{
+        transform: translate(0px, 5px);
+    }
+    
+    40% {
+      transform: translate(5px, 0px);
+    }
+
+    60%{
+        transform: translate(0px, -5px);
+
+    }
+    80% {
+      transform: translate(-5px, 0);
+    }
+  }
+
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  height: 100%;
+
+  &__navigation-bar {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+  }
+
+
+  @media (min-width: $break-sm) {
+    &__container {
+      max-width: 540px;
+    }
+  }
+
+  @media (min-width: $break-md) {
+    &__container {
+      max-width: 720px;
+    }
+  }
+
+  @media (min-width: $break-lg) {
+    &__container {
+      max-width: 960px;
+    }
+  }
+
+  @media (min-width: $break-xl) {
+    &__container {
+      max-width: 1140px;
+    }
+  }
+}
+
+.square{
+    opacity: 0.95;
+    background: white;
+    border: 9px solid black;
+    font-family: $font-bold;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    transition: 0.4s;
+    position: absolute;
+}
+
+.about{
+    width: 372px;
+    height: 750px;
+    left: 58px;
+    top:0px;
+    z-index: 3;
+    animation: squares 8s infinite;
+    animation-delay: 0s;
+
+    &:hover{
+    background-color: $yellow;
+    }
+}
+
+.cv{
+left: 361px;
+top: 500px;
+width: 304px;
+height: 350px;
+z-index: 2;
+animation: squares 8s infinite;
+animation-delay: 0.5s;
+
+&:hover{
+    background-color: $cyan;
+    }
+}
+
+.projects{
+width: 933px;
+height: 352px;
+left: 352px;
+top: 96px;
+z-index: 4;
+animation: squares 8s infinite;
+animation-delay: 2s;
+
+&:hover{
+    background-color: $cyan;
+    }
+}
+
+.contact{
+float: right;
+top: 270px;
+animation: squares 10s infinite;
+animation-delay: 1s;
+width: 100%;
+width: 683px;
+height: 467px;
+position: relative;
+
+/* If in mobile screen with maximum width 479px. The iPhone screen resolution is 320x480 px (except iPhone4, 640x960) */    
+
+
+&:hover{
+    background-color: $magenta;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+  .about {
+    left: 250px;
+    width: 500px;
+    height: 900px;
+  }
+
+  .projects{
+    left: 580px;
+    width: 1061px;
+    height: 470px;
+  }
+
+  .cv{
+    left: 580px;
+    top: 620px;
+    width: 432px;
+    height: 500px;
+  }
+
+  .contact{
+    width: 684px;
+    height: 467px;
+    top: 400px;
+    left: 1100px;
+    float: left;
+    border: 9px solid;
+    position: sticky;
+  }
+}
+
+@media only screen and (max-width: 1100px){
+  .projects{
+  width: 700px;
+  height: 300px;
+  left: 352px;
+  }
+  .contact{
+  width: 500px;
+  height: 350px;  
+  }
+}
+
+@media only screen and (max-width: 954px){
+  .about {
+    width: 250px;
+    height: 500px;
+    left: 58px;
+  }
+
+  .projects{
+    width: 550px;
+    height: 250px;
+    left: 230px;
+  }
+
+  .cv{
+    left: 250px;
+    top: 400px;
+    width: 230px;
+    height: 300px;
+  }
+
+  .contact{
+    top: 230px;
+    width: 450px;
+    height: 300px;  
+  }
+}
+
+@media only screen and (max-width: 746px){
+ .square{
+   width: 36vw;
+   height: 15.7vh;
+   left: 0px;
+   animation: none;
+   float: left;
+   width: 100%;
+   top: 0px;
+   left: 0px;
+   margin-top: 15px;
+   position: relative;
+   border: solid 7px;
+   border-left: none;
+   border-right: none;
+   }
+
+   .about{
+     border-top: solid 7px;
+     margin-top: 0px;
+   }
+}
+
+
+
+.overlay {
+    margin: 30px;
+    background: #009938;
+  }
+
+    .nav{
+        margin: 20px;
+        
+    }

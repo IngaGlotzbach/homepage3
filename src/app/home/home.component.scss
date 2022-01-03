@@ -1,0 +1,25 @@
+@import '../../styles.scss';
+
+.typewrite{
+    color: black; 
+    font-family: 'Inconsolata';
+    position: fixed;
+    font-size: 36px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+a{
+    text-decoration: none;
+}
+body {
+    background-color:#ce3635;
+    text-align: center;
+    color:#fff;
+    padding-top:10em;
+  }
+
+  
+  * { color:#fff; text-decoration: none;}
