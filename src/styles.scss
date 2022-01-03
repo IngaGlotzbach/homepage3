@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('./assets/fonts/Inconsolata-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Inconsolata Regular';
+    src: url(./assets/fonts/Inconsolata-Regular.ttf);
+    font-weight: lighter;
+}
+
+@import './assets/sass/var';
+
+html, body {
+    height: 100%;
+}
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
