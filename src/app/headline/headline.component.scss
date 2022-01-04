@@ -1,0 +1,14 @@
+@import '../../styles.scss';
+.square{
+    opacity: 0.95;
+    background: white;
+    border: 9px solid black;
+    font-family: $font-bold;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    transition: 0.4s;
+    position: absolute;
+    width: 1244px;
+    height: 186px;
+}
